@@ -53,9 +53,7 @@ node .\workers\revoirDroits.js
 - Il est identique aux droits GitLab au début donc on peut faire un test simple : **modifier un rôle dans `droitsBase.txt` et voir comment Gemini détecte l'écart**.
 - Si une différence est détectée, Gemini va signaler qu'une maj est nécessaire sur GitLab
 
-## Choix technologiques
+## Choix
 - **API Gemini** : choisie car elle est gratuite pour la génération de texte
-- **GitLab API** : pour extraire les permissions du projet GitLab.
-- **Camunda 7** : orchestrateur des différentes tâches du workflow.
-
+- **GitLab API** : pour extraire les permissions du projet GitLab
 
