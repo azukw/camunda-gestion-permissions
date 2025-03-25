@@ -11,19 +11,25 @@ J'utilise **Camunda 7** pour automatiser la vérification des droits d'accès d'
 3. Exporter le tout.
 
 ### 2️ Lancer les scripts
-Avant de lancer les scripts, n'oublie pas de modifier les tokens dans les fichiers JavaScript (les deux API sont gratuites) :
+Au cas où, avant de lancer les scripts, n'oublie pas d'installer les dépendances :
+```sh
+#  (Windows)
+cd .\workers
+npm i 
+```
 
+Il faut aussi modifier les tokens dans les fichiers JavaScript (les deux API sont gratuites) :
 - Dans `extraireDroits.js`, remplace `const GITLAB_TOKEN = "TON TOKEN";` par ton propre token GitLab.
 - Dans `revoirDroits.js`, remplace `const GEMINI_API_KEY = "TON TOKEN";` par ton propre token Gemini.
 
 Dans deux terminaux, en étant à la racine du projet :
 ```sh
 #  (Windows)
-node ./workers/extraireDroits.js 
+node .\workers\extraireDroits.js 
 ```
 ```sh
 #  (Windows)
-node ./workers/revoirDroits.js
+node .\workers\revoirDroits.js
 ```
 
 ### 3️ Exécuter le processus sur Camunda
