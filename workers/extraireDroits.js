@@ -1,5 +1,5 @@
 import { Client, logger, Variables } from "camunda-external-task-client-js";
-import axios from "axios"; // Import de la librairie HTTP
+import axios from "axios"; 
 
 // config du client Camunda
 const config = { baseUrl: "http://localhost:8080/engine-rest", use: logger };
