@@ -1,0 +1,56 @@
+{
+  "components": [
+    {
+      "label": "Permissions récupérées",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0r8v6lb",
+        "columns": null
+      },
+      "id": "Field_0ipc8oy",
+      "key": "cle_permissions",
+      "readonly": true,
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Revue des droits",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_0c1fsl4",
+        "columns": null
+      },
+      "id": "Field_1mzanti",
+      "key": "compterendu",
+      "description": "Compte-rendu",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Erreurs",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1jj3bks",
+        "columns": null
+      },
+      "id": "Field_0jx078y",
+      "key": "erreurs",
+      "description": "Y a t-il des erreurs ?",
+      "validate": {
+        "pattern": "Oui|Non",
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "checkForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.33.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 18
+}

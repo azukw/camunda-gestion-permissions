@@ -1,0 +1,27 @@
+{
+  "components": [
+    {
+      "label": "Permissions",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1q6gtpz",
+        "columns": null
+      },
+      "id": "Field_0s8m502",
+      "key": "cle_permissions",
+      "description": "Quelles sont les permissions de chacun ?",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "permissionForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.33.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 18
+}

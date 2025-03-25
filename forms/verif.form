@@ -1,0 +1,57 @@
+{
+  "components": [
+    {
+      "label": "Erreurs",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0mktwxd",
+        "columns": null
+      },
+      "id": "Field_0l5ptap",
+      "key": "erreurs",
+      "description": "Y a t-il des erreurs ?",
+      "readonly": true,
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Explications des erreurs",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_18ch4o4",
+        "columns": null
+      },
+      "id": "Field_1yws4nq",
+      "key": "compterendu",
+      "description": "Compte-rendu",
+      "readonly": true,
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Est-ce une erreur importante ?",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0gf65re",
+        "columns": null
+      },
+      "id": "Field_0a0hx9z",
+      "key": "grave",
+      "validate": {
+        "required": true,
+        "pattern": "Oui|Non"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "verifForm",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.33.1"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 18
+}
