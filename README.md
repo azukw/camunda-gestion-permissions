@@ -19,8 +19,8 @@ npm i
 ```
 
 Il faut aussi modifier les tokens dans les fichiers JavaScript (les deux API sont gratuites) :
-- Dans `extraireDroits.js`, remplace `const GITLAB_TOKEN = "TON TOKEN";` par ton propre token GitLab.
-- Dans `revoirDroits.js`, remplace `const GEMINI_API_KEY = "TON TOKEN";` par ton propre token Gemini.
+- Dans `extraireDroits.js`, remplace `const GITLAB_TOKEN = "TON TOKEN";` par ton propre [token GitLab](https://gitlab.com/-/user_settings/personal_access_tokens).
+- Dans `revoirDroits.js`, remplace `const GEMINI_API_KEY = "TON TOKEN";` par ton propre [token Gemini](https://aistudio.google.com/app/apikey?hl=fr).
 
 Dans deux terminaux, en étant à la racine du projet :
 ```sh
