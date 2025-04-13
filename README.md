@@ -5,13 +5,13 @@ J'utilise **Camunda 7** pour automatiser la vérification des droits d'accès d'
 
 ## Comment tester
 
-### 1️ Importer et exporter le BPMN
+### 1 Importer et exporter le BPMN
 1. Ouvrir **Camunda Modeler**.
 2. Importer le fichier `processus_permissions.bpmn` ainsi que les **quatre formulaires** nécessaires.
 3. Exporter le tout.
 
-### 2️ Lancer les scripts
-Au cas où, avant de lancer les scripts, n'oublie pas d'installer les dépendances :
+### 2 Lancer les scripts
+Au cas où, avant de lancer les scripts, ne pas oublier d'installer les dépendances :
 ```sh
 #  (Windows)
 cd .\workers
@@ -32,7 +32,7 @@ node .\workers\extraireDroits.js
 node .\workers\revoirDroits.js
 ```
 
-### 3️ Exécuter le processus sur Camunda
+### 3 Exécuter le processus sur Camunda
 1. Aller sur la **tasklist Camunda**.
 2. Démarrer un nouveau processus **"permissions"**.
 
