@@ -5,12 +5,12 @@ J'utilise **Camunda 7** pour automatiser la vérification des droits d'accès d'
 
 ## Comment tester
 
-### 1 Importer et exporter le BPMN
+### 1 - Importer et exporter le BPMN
 1. Ouvrir **Camunda Modeler**.
 2. Importer le fichier `processus_permissions.bpmn` ainsi que les **quatre formulaires** nécessaires.
 3. Exporter le tout.
 
-### 2 Lancer les scripts
+### 2 - Lancer les scripts
 Au cas où, avant de lancer les scripts, ne pas oublier d'installer les dépendances :
 ```sh
 #  (Windows)
@@ -32,11 +32,11 @@ node .\workers\extraireDroits.js
 node .\workers\revoirDroits.js
 ```
 
-### 3 Exécuter le processus sur Camunda
+### 3 - Exécuter le processus sur Camunda
 1. Aller sur la **tasklist Camunda**.
 2. Démarrer un nouveau processus **"permissions"**.
 
-### 4️ Déroulement du processus
+### 4 - Déroulement du processus
 1. **`extraireDroits.js`** extrait les droits actuels via l'API GitLab et les envoie à la tâche suivante
 2. **`revoirDroits.js`** envoie les permissions à **l'API Gemini** pour comparer avec les permissions officielles définies dans `droitsBase.txt`
 3. Selon la réponse de Gemini :
